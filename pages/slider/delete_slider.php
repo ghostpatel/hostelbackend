@@ -8,7 +8,7 @@ session_start();
 
      if($_GET['delete']){
             $_SESSION["message"] = "Data has been deleted ";
-             header("location:show_sliders_details.php");
+             header("location:pages/slider/show_sliders_details.php");
               exit;
      }
 

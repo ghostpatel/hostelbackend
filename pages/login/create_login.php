@@ -32,7 +32,7 @@
 <div class="content">
     <!-- jQuery Validation (.js-validation class is initialized in js/pages/be_forms_validation.min.js which was auto compiled from _es6/pages/be_forms_validation.js) -->
     <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-    <form class="js-validation" action="login/create_login.php" method="POST">
+    <form class="js-validation" action="pages/login/create_login.php" method="POST">
         <div class="block">
 
             <div class="block-content block-content-full">

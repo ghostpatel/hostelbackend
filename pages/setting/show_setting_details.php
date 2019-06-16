@@ -1,13 +1,13 @@
-<?php require 'inc/_global/config.php'; ?>
-<?php require 'inc/backend/config.php'; ?>
-<?php require 'inc/_global/views/head_start.php'; ?>
+<?php require '../../inc/_global/config.php'; ?>
+<?php require '../../inc/backend/config.php'; ?>
+<?php require '../../inc/_global/views/head_start.php'; ?>
 
 <!-- Page JS Plugins CSS -->
-<?php $one->get_css('js/plugins/datatables/dataTables.bootstrap4.css'); ?>
-<?php $one->get_css('js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css'); ?>
+<?php $one->get_css('../../js/plugins/datatables/dataTables.bootstrap4.css'); ?>
+<?php $one->get_css('../../js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css'); ?>
 
-<?php require 'inc/_global/views/head_end.php'; ?>
-<?php require 'inc/_global/views/page_start.php'; ?>
+<?php require '../../inc/_global/views/head_end.php'; ?>
+<?php require '../../inc/_global/views/page_start.php'; ?>
 
 <!-- Hero -->
 <div class="bg-body-light">
@@ -75,19 +75,19 @@
 </div>
 <!-- END Page Content -->
 
-<?php require 'inc/_global/views/page_end.php'; ?>
-<?php require 'inc/_global/views/footer_start.php'; ?>
+<?php require '../../inc/_global/views/page_end.php'; ?>
+<?php require '../../inc/_global/views/footer_start.php'; ?>
 
 <!-- Page JS Plugins -->
-<?php $one->get_js('js/plugins/datatables/jquery.dataTables.min.js'); ?>
-<?php $one->get_js('js/plugins/datatables/dataTables.bootstrap4.min.js'); ?>
-<?php $one->get_js('js/plugins/datatables/buttons/dataTables.buttons.min.js'); ?>
-<?php $one->get_js('js/plugins/datatables/buttons/buttons.print.min.js'); ?>
-<?php $one->get_js('js/plugins/datatables/buttons/buttons.html5.min.js'); ?>
-<?php $one->get_js('js/plugins/datatables/buttons/buttons.flash.min.js'); ?>
-<?php $one->get_js('js/plugins/datatables/buttons/buttons.colVis.min.js'); ?>
+<?php $one->get_js('../../js/plugins/datatables/jquery.dataTables.min.js'); ?>
+<?php $one->get_js('../../js/plugins/datatables/dataTables.bootstrap4.min.js'); ?>
+<?php $one->get_js('../../js/plugins/datatables/buttons/dataTables.buttons.min.js'); ?>
+<?php $one->get_js('../../js/plugins/datatables/buttons/buttons.print.min.js'); ?>
+<?php $one->get_js('../../js/plugins/datatables/buttons/buttons.html5.min.js'); ?>
+<?php $one->get_js('../../js/plugins/datatables/buttons/buttons.flash.min.js'); ?>
+<?php $one->get_js('../../js/plugins/datatables/buttons/buttons.colVis.min.js'); ?>
 
 <!-- Page JS Code -->
-<?php $one->get_js('js/pages/be_tables_datatables.min.js'); ?>
+<?php $one->get_js('../../js/pages/be_tables_datatables.min.js'); ?>
 
-<?php require 'inc/_global/views/footer_end.php'; ?>
+<?php require '../../inc/_global/views/footer_end.php'; ?>

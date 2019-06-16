@@ -3,7 +3,7 @@
 <?php require '../../inc/_global/views/head_start.php'; ?>
 
 <!-- Page JS Plugins CSS -->
-<?php $one->get_css('js/plugins/select2/css/select2.min.css'); ?>
+<?php $one->get_css('../../js/plugins/select2/css/select2.min.css'); ?>
 
 <?php require '../../inc/_global/views/head_end.php'; ?>
 <?php require '../../inc/_global/views/page_start.php'; ?>

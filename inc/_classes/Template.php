@@ -298,8 +298,13 @@ class Template {
      * @param string $asset_css The url of the CSS file in the assets folder
      *
      */
-    public function get_css($asset_css) {
+    public function get_css($asset_css,$abs=false) {
+        if($abs){
+            echo "<link rel=\"stylesheet\" href=\"$asset_css\">\n";
+
+        }else{
         echo "<link rel=\"stylesheet\" href=\"$this->assets_folder/$asset_css\">\n";
+        }
     }
 
     /**
@@ -308,8 +313,14 @@ class Template {
      * @param string $asset_js The url of the JS file in the assets folder
      *
      */
-    public function get_js($asset_js) {
-        echo "<script src=\"$this->assets_folder/$asset_js\"></script>\n";
+    public function get_js($asset_js,$abs=false) {
+        if($abs){
+            echo "<script src=\"$asset_js\"></script>\n";
+
+        }else{
+            echo "<script src=\"$this->assets_folder/$asset_js\"></script>\n";
+
+        }
     }
 
     /**

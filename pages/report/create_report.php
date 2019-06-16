@@ -1,12 +1,12 @@
-<?php require 'inc/_global/config.php'; ?>
-<?php require 'inc/backend/config.php'; ?>
-<?php require 'inc/_global/views/head_start.php'; ?>
+<?php require '../../inc/_global/config.php'; ?>
+<?php require '../../inc/backend/config.php'; ?>
+<?php require '../../inc/_global/views/head_start.php'; ?>
 
 <!-- Page JS Plugins CSS -->
-<?php $one->get_css('js/plugins/select2/css/select2.min.css'); ?>
+<?php $one->get_css('../../js/plugins/select2/css/select2.min.css'); ?>
 
-<?php require 'inc/_global/views/head_end.php'; ?>
-<?php require 'inc/_global/views/page_start.php'; ?>
+<?php require '../../inc/_global/views/head_end.php'; ?>
+<?php require '../../inc/_global/views/page_start.php'; ?>
 
 <!-- Hero -->
 <div class="bg-body-light">
@@ -32,7 +32,7 @@
 <div class="content">
     <!-- jQuery Validation (.js-validation class is initialized in js/pages/be_forms_validation.min.js which was auto compiled from _es6/pages/be_forms_validation.js) -->
     <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-    <form class="js-validation" action="report/create_report.php" method="POST">
+    <form class="js-validation" action="pages/report/create_report.php" method="POST">
         <div class="block">
 
             <div class="block-content block-content-full">
@@ -66,17 +66,17 @@
 </div>
 <!-- END Terms Modal -->
 
-<?php require 'inc/_global/views/footer_start.php'; ?>
+<?php require '../../inc/_global/views/footer_start.php'; ?>
 
 <!-- Page JS Plugins -->
-<?php $one->get_js('js/plugins/select2/js/select2.full.min.js'); ?>
-<?php $one->get_js('js/plugins/jquery-validation/jquery.validate.min.js'); ?>
-<?php $one->get_js('js/plugins/jquery-validation/additional-methods.js'); ?>
+<?php $one->get_js('../../js/plugins/select2/js/select2.full.min.js'); ?>
+<?php $one->get_js('j../../s/plugins/jquery-validation/jquery.validate.min.js'); ?>
+<?php $one->get_js('../../js/plugins/jquery-validation/additional-methods.js'); ?>
 
 <!-- Page JS Helpers (Select2 plugin) -->
 <script>jQuery(function(){ One.helpers('select2'); });</script>
 
 <!-- Page JS Code -->
-<?php $one->get_js('js/pages/be_forms_validation.min.js'); ?>
+<?php $one->get_js('../../js/pages/be_forms_validation.min.js'); ?>
 
-<?php require 'inc/_global/views/footer_end.php'; ?>
+<?php require '../../inc/_global/views/footer_end.php'; ?>

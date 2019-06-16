@@ -54,7 +54,6 @@ MAIN CONTENT LAYOUT
     'main-content-narrow'                       Full width Main Content with a percentage width (screen width > 1200px)
 -->
 <div id="page-container"<?php $one->page_classes(); ?>>
-    <?php if(isset($one->inc_side_overlay) && $one->inc_side_overlay) { include($one->inc_side_overlay); } ?>
     <?php if(isset($one->inc_sidebar) && $one->inc_sidebar) { include($one->inc_sidebar); } ?>
     <?php if(isset($one->inc_header) && $one->inc_header) { include($one->inc_header); } ?>
 

@@ -1,8 +1,8 @@
-<?php require 'inc/_global/config.php'; ?>
-<?php require 'inc/backend/config.php'; ?>
-<?php require 'inc/_global/views/head_start.php'; ?>
-<?php require 'inc/_global/views/head_end.php'; ?>
-<?php require 'inc/_global/views/page_start.php'; ?>
+<?php require '../../inc/_global/config.php'; ?>
+<?php require '../../inc/backend/config.php'; ?>
+<?php require '../../inc/_global/views/head_start.php'; ?>
+<?php require '../../inc/_global/views/head_end.php'; ?>
+<?php require '../../inc/_global/views/page_start.php'; ?>
 
 <!-- Hero -->
 <div class="bg-body-light">
@@ -30,7 +30,7 @@
     <div class="block">
         
         <div class="block-content block-content-full">
-            <form action="create_contact.php" method="POST" enctype="multipart/form-data" onsubmit="return false;">
+            <form action="pages/contact/create_contact.php" method="POST" enctype="multipart/form-data" onsubmit="return false;">
                 <div class="row push">
                     <div class="col-lg-8 col-xl-5">
                         <div class="form-group">
@@ -55,6 +55,6 @@
 </div>
 <!-- END Page Content -->
 
-<?php require 'inc/_global/views/page_end.php'; ?>
-<?php require 'inc/_global/views/footer_start.php'; ?>
-<?php require 'inc/_global/views/footer_end.php'; ?>
+<?php require '../../inc/_global/views/page_end.php'; ?>
+<?php require '../../inc/_global/views/footer_start.php'; ?>
+<?php require '../../inc/_global/views/footer_end.php'; ?>

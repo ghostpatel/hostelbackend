@@ -56,11 +56,11 @@ $one->main_nav                   = array(
         'sub'   => array(
            array(
             'name'  => 'Slider Form',
-            'url'   => 'create_sliders.php'
+            'url'   => 'slider/create_sliders.php'
            ),
            array(
             'name'  => 'Slider Details',
-            'url'   => 'show_sliders_details.php'
+            'url'   => 'slider/show_sliders_details.php'
            )
         )
     ),
@@ -70,11 +70,11 @@ $one->main_nav                   = array(
         'sub'   => array(
             array(
                 'name'  => 'Facility Form',
-                'url'   => 'create_facility.php'
+                'url'   => 'facility/create_facility.php'
             ),
             array(
                 'name'  => 'Facility Details',
-                'url'   => 'show_facility_details.php'
+                'url'   => 'facility/show_facility_details.php'
             )
         )
     ),
@@ -84,11 +84,11 @@ $one->main_nav                   = array(
         'sub'   => array(
             array(
                 'name'  => 'Gallery Form',
-                'url'   => 'create_gallery.php'
+                'url'   => 'gallery/create_gallery.php'
             ),
             array(
                 'name'  => 'Gallery Details',
-                'url'   => 'show_gallery_details.php'
+                'url'   => 'gallery/show_gallery_details.php'
             )
         )
     ),
@@ -98,11 +98,11 @@ $one->main_nav                   = array(
         'sub'   => array(
             array(
                 'name'  => 'Student Form',
-                'url'   => 'create_student.php'
+                'url'   => 'student/create_student.php'
             ),
             array(
                 'name'  => 'Student Details',
-                'url'   => 'show_student_details.php'
+                'url'   => 'student/show_student_details.php'
             )    )
     ),
     array(
@@ -111,12 +111,12 @@ $one->main_nav                   = array(
         'sub'   => array(
             array(
                 'name'  => 'Sign Up',
-                'url'   => 'create_login.php'
+                'url'   => 'login/create_login.php'
             ),
     
             array(
                 'name'  => 'Login Table',
-                'url'   => 'show_login.php'
+                'url'   => 'login/show_login.php'
             )
         )
     ),
@@ -126,11 +126,11 @@ $one->main_nav                   = array(
         'sub'   => array(
             array(
                 'name'  => 'Contact Form',
-                'url'   => 'create_contact.php'
+                'url'   => 'contact/create_contact.php'
             ),
             array(
                 'name'  => 'Contact Details',
-                'url'   => 'show_contact.php'
+                'url'   => 'contact/show_contact.php'
             ),
            
         )
@@ -141,11 +141,11 @@ $one->main_nav                   = array(
         'sub'   => array(
             array(
                 'name'  => 'Subscribe Form',
-                'url'   => 'create_subscribe.php'
+                'url'   => 'subscribe/create_subscribe.php'
             ),
             array(
                 'name'  => 'Subscribe Details',
-                'url'   => 'show_subscribe_details.php'
+                'url'   => 'subscribe/show_subscribe_details.php'
             )
         )
     ),
@@ -156,11 +156,11 @@ $one->main_nav                   = array(
         'sub'   => array(
             array(
                 'name'  => 'Setting Form',
-                'url'   => 'create_setting.php'
+                'url'   => 'setting/create_setting.php'
             ),
             array(
                 'name'  => 'Setting Details',
-                'url'   => 'show_setting_details.php'
+                'url'   => 'setting/show_setting_details.php'
             )
         )
     ),
@@ -171,11 +171,11 @@ $one->main_nav                   = array(
         'sub'   => array(
             array(
                 'name'  => 'Reporting Form',
-                'url'   => 'create_report.php'
+                'url'   => 'report/create_report.php'
             ),
             array(
                 'name'  => 'Reporting Details',
-                'url'   => 'show_report_details.php'
+                'url'   => 'report/show_report_details.php'
             )
         )
     ),

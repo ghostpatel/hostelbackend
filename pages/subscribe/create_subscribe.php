@@ -13,13 +13,13 @@
     <div class="content content-full">
         <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
             <h1 class="flex-sm-fill h3 my-2">
-                Facility Form
+                Subscribe Form
             </h1>
             <nav class="flex-sm-00-auto ml-sm-3" aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-alt">
-                    <li class="breadcrumb-item">Facility</li>
+                    <li class="breadcrumb-item">Subscribe</li>
                     <li class="breadcrumb-item" aria-current="page">
-                        <a class="link-fx" href="">Facility Form</a>
+                        <a class="link-fx" href="">Subscribe Form</a>
                     </li>
                 </ol>
             </nav>
@@ -32,7 +32,7 @@
 <div class="content">
     <!-- jQuery Validation (.js-validation class is initialized in js/pages/be_forms_validation.min.js which was auto compiled from _es6/pages/be_forms_validation.js) -->
     <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-    <form class="js-validation" action="create_facility.php" method="POST">
+    <form class="js-validation" action="subscribe/create_subscribe.php" method="POST">
         <div class="block">
 
             <div class="block-content block-content-full">

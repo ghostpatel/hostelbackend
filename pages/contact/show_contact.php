@@ -1,26 +1,26 @@
-<?php require 'inc/_global/config.php'; ?>
-<?php require 'inc/backend/config.php'; ?>
-<?php require 'inc/_global/views/head_start.php'; ?>
+<?php require '../../inc/_global/config.php'; ?>
+<?php require '../../inc/backend/config.php'; ?>
+<?php require '../../inc/_global/views/head_start.php'; ?>
 
 <!-- Page JS Plugins CSS -->
-<?php $one->get_css('js/plugins/datatables/dataTables.bootstrap4.css'); ?>
-<?php $one->get_css('js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css'); ?>
+<?php $one->get_css('../../js/plugins/datatables/dataTables.bootstrap4.css'); ?>
+<?php $one->get_css('../../js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css'); ?>
 
-<?php require 'inc/_global/views/head_end.php'; ?>
-<?php require 'inc/_global/views/page_start.php'; ?>
+<?php require '../../inc/_global/views/head_end.php'; ?>
+<?php require '../../inc/_global/views/page_start.php'; ?>
 
 <!-- Hero -->
 <div class="bg-body-light">
     <div class="content content-full">
         <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
             <h1 class="flex-sm-fill h3 my-2">
-                Gallery Details
+                Contact Details
             </h1>
             <nav class="flex-sm-00-auto ml-sm-3" aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-alt">
-                    <li class="breadcrumb-item">Gallery</li>
+                    <li class="breadcrumb-item">Contact</li>
                     <li class="breadcrumb-item" aria-current="page">
-                        <a class="link-fx" href="">Gallery Details</a>
+                        <a class="link-fx" href="">Contact Details</a>
                     </li>
                 </ol>
             </nav>
@@ -33,17 +33,16 @@
 <div class="content">
      <!-- Dynamic Table with Export Buttons -->
     <div class="block">
-        
+       
         <div class="block-content block-content-full">
             <!-- DataTables init on table by adding .js-dataTable-buttons class, functionality is initialized in js/pages/be_tables_datatables.min.js which was auto compiled from _es6/pages/be_tables_datatables.js -->
             <table class="table table-bordered table-striped table-vcenter js-dataTable-buttons">
                 <thead>
                     <tr>
                         <th class="text-center" style="width: 80px;">ID</th>
-                        <th class="d-none d-sm-table-cell" style="width: 15%;">Title</th>
-                        <th class="d-none d-sm-table-cell" style="width: 30%;">Description</th>
-                        <th class="d-none d-sm-table-cell" style="width: 15%;">Link</th>
-                        <th style="width: 15%;">Image</th>
+                        <th>Name</th>
+                        <th class="d-none d-sm-table-cell" style="width: 30%;">Email</th>
+                        <th class="d-none d-sm-table-cell" style="width: 30%;">Message</th>
                         <th style="width: 15%;">Action</th>
                     </tr>
                 </thead>
@@ -61,11 +60,8 @@
                             <?php $one->get_tag(); ?>
                         </td>
                         <td>
-                            <em class="text-muted font-size-sm"><?php echo rand(2, 10); ?> days ago</em>
-                        </td>
-                        <td>
-                            <a href=""><button type="submit" class="btn btn-primary">Edit</button></a>
-                            <a href=""><button type="submit" class="btn btn-danger">Delete</button></a>
+                            <a href=""><button type="submit" class="btn btn-primary"> Edit</button></a>
+                            <a href=""><button type="submit" class="btn btn-danger"> Delete</button></a>
                         </td>
                     </tr>
                     <?php } ?>
@@ -77,19 +73,19 @@
 </div>
 <!-- END Page Content -->
 
-<?php require 'inc/_global/views/page_end.php'; ?>
-<?php require 'inc/_global/views/footer_start.php'; ?>
+<?php require '../../inc/_global/views/page_end.php'; ?>
+<?php require '../../inc/_global/views/footer_start.php'; ?>
 
 <!-- Page JS Plugins -->
-<?php $one->get_js('js/plugins/datatables/jquery.dataTables.min.js'); ?>
-<?php $one->get_js('js/plugins/datatables/dataTables.bootstrap4.min.js'); ?>
-<?php $one->get_js('js/plugins/datatables/buttons/dataTables.buttons.min.js'); ?>
-<?php $one->get_js('js/plugins/datatables/buttons/buttons.print.min.js'); ?>
-<?php $one->get_js('js/plugins/datatables/buttons/buttons.html5.min.js'); ?>
-<?php $one->get_js('js/plugins/datatables/buttons/buttons.flash.min.js'); ?>
-<?php $one->get_js('js/plugins/datatables/buttons/buttons.colVis.min.js'); ?>
+<?php $one->get_js('../../js/plugins/datatables/jquery.dataTables.min.js'); ?>
+<?php $one->get_js('../../js/plugins/datatables/dataTables.bootstrap4.min.js'); ?>
+<?php $one->get_js('../../js/plugins/datatables/buttons/dataTables.buttons.min.js'); ?>
+<?php $one->get_js('../../js/plugins/datatables/buttons/buttons.print.min.js'); ?>
+<?php $one->get_js('../../js/plugins/datatables/buttons/buttons.html5.min.js'); ?>
+<?php $one->get_js('../../js/plugins/datatables/buttons/buttons.flash.min.js'); ?>
+<?php $one->get_js('../../js/plugins/datatables/buttons/buttons.colVis.min.js'); ?>
 
 <!-- Page JS Code -->
-<?php $one->get_js('js/pages/be_tables_datatables.min.js'); ?>
+<?php $one->get_js('../../js/pages/be_tables_datatables.min.js'); ?>
 
-<?php require 'inc/_global/views/footer_end.php'; ?>
+<?php require '../../inc/_global/views/footer_end.php'; ?>

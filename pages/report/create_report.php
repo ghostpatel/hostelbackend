@@ -13,13 +13,13 @@
     <div class="content content-full">
         <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
             <h1 class="flex-sm-fill h3 my-2">
-                Student Form
+                Report Form
             </h1>
             <nav class="flex-sm-00-auto ml-sm-3" aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-alt">
-                    <li class="breadcrumb-item">Student List</li>
+                    <li class="breadcrumb-item">Report</li>
                     <li class="breadcrumb-item" aria-current="page">
-                        <a class="link-fx" href="">Student Form</a>
+                        <a class="link-fx" href="">Report Form</a>
                     </li>
                 </ol>
             </nav>
@@ -32,7 +32,7 @@
 <div class="content">
     <!-- jQuery Validation (.js-validation class is initialized in js/pages/be_forms_validation.min.js which was auto compiled from _es6/pages/be_forms_validation.js) -->
     <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-    <form class="js-validation" action="insert_student.php" method="POST">
+    <form class="js-validation" action="report/create_report.php" method="POST">
         <div class="block">
 
             <div class="block-content block-content-full">
@@ -40,17 +40,18 @@
                     <div class="row items-push">
                         <div class="col-md-8 col-xl-5">
                             <div class="form-group">
-                                <label for="val-name">Name <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="val-firstname" name="val-name" placeholder="Enter your name">
+                                <label for="val-title">Title <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="val-title" name="val-title" placeholder="Enter a title">
                             </div>
                             <div class="form-group">
-                                <label for="val-email">Address <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="val-address" name="val-address" placeholder="Enter address">
+                                <label for="val-description">Description <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="val-description" name="val-description" placeholder="Enter a description">
                             </div>
                             <div class="form-group">
-                                <label for="val-phone">Phone Number <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="val-phone" name="val-phone" placeholder="Enter your phone number">
+                                <label for="val-link">Link <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="val-link" name="val-link" placeholder="Enter link">
                             </div>
+                        
                             <div class="form-group">
                                 <label for="val-image">Profile Picture<span class="text-danger">*</span></label>
                                 <input type="file" class="form-control" id="val-image" name="val-image">
@@ -58,7 +59,7 @@
                         </div>
                     </div>
                     <!-- END Regular -->
-                    <button type="submit" class="btn btn-sm btn-primary" data-dismiss="modal">Submit</button>
+                    <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Submit</button>
             </div>
         </div>
     </div>

@@ -36,7 +36,7 @@ if(isset($_POST['upload'])){
 
     //  if($_GET['submit']){
             $_SESSION["msg"] = "Data has been recorded successfully";
-             header("location:show_sliders_details.php");
+             header("location:pages/show_sliders_details.php");
               exit;
         //  }
 

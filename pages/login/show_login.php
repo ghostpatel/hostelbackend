@@ -14,13 +14,13 @@
     <div class="content content-full">
         <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
             <h1 class="flex-sm-fill h3 my-2">
-                Slider Details
+                Login Details
             </h1>
             <nav class="flex-sm-00-auto ml-sm-3" aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-alt">
-                    <li class="breadcrumb-item">Slider</li>
+                    <li class="breadcrumb-item">Login</li>
                     <li class="breadcrumb-item" aria-current="page">
-                        <a class="link-fx" href="">Slider Details</a>
+                        <a class="link-fx" href="">Login Details</a>
                     </li>
                 </ol>
             </nav>
@@ -33,7 +33,7 @@
 
 $db = new mysqli('localhost','root','','hostel');
 
-$sql = "SELECT * FROM slider";
+$sql = "SELECT * FROM login";
 $data =  mysqli_query($db,$sql);
 //print_r($data);
 
@@ -64,23 +64,24 @@ if(isset($_SESSION["message"]) && !empty($_SESSION["message"] )){
                 <thead>
                     <tr>
                         <th class="text-center" style="width: 80px;">ID</th>
-                        <th class="d-none d-sm-table-cell" style="width: 15%;">Title</th>
-                        <th class="d-none d-sm-table-cell" style="width: 30%;">Description</th>
-                        <th class="d-none d-sm-table-cell" style="width: 15%;">Link</th>
-                        <th style="width: 15%;">Image</th>
+                        <th class="d-none d-sm-table-cell" style="width: 25%;">Username</th>
+                        <th class="d-none d-sm-table-cell" style="width: 15%;">Email</th>
+                        <th class="d-none d-sm-table-cell" style="width: 15%;">Password</th>
+                        <th style="width: 15%;">Confirm Password</th>
+                        <th class="d-none d-sm-table-cell" style="width: 30%;">User Type</th>
                         <th style="width: 15%;">Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php while ($row = $data->fetch_assoc()) { ?>
+                       
                         <tr>
                             <td><?php echo $row["id"]; ?></td>
-                            <td><?php echo $row["title"]; ?></td>
-                            <td><?php echo $row["description"];?></td>
-                            <td><?php echo $row["link"];?></td>
-                            <td>
-                                <img src="http://localhost/hostelbackend/images/<?php echo $row["image"];?>" style="width:70px;height:50px;" >
-                            </td>
+                            <td><?php echo $row["username"]; ?></td>
+                            <td><?php echo $row["email"];?></td>
+                            <td><?php echo $row["password"];?></td>
+                            <td><?php echo $row["confirm_password"];?></td>
+                            <td><?php echo $row["user_type"];?></td>
                             <td>
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                     Edit
@@ -91,43 +92,34 @@ if(isset($_SESSION["message"]) && !empty($_SESSION["message"] )){
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Update Slider</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Update Login</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                    <form class="js-validation" action="update_slider.php" method="POST" enctype="multipart/form-data">
+                                    <form class="js-validation" action="pages/login/insert_login.php" method="POST" enctype="multipart/form-data">
                                             <div class="block">
                                                 <div class="block-content block-content-full">
                                                     <div class="">
                                                         <div class="row items-push">
                                                             <div class="col-sm-12">
                                                                 <div class="form-group">
-                                                                    <label for="val-title">Title <span class="text-danger">*</span></label>
-                                                                    <input type="text" value="<?php echo $row["title"]; ?>"  class="form-control" id="title" name="title" placeholder="Enter a title">
+                                                                    <label for="username">Username <span class="text-danger">*</span></label>
+                                                                    <input type="text" value="<?php echo $row["username"]; ?>"  class="form-control" id="usewrname" name="title" placeholder="Enter username">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <label for="val-description">Description <span class="text-danger">*</span></label>
-                                                                    <input type="text" value="<?php echo $row["description"]; ?>" class="form-control" id="description" name="description" placeholder="Enter a description">
+                                                                    <label for="password">Password <span class="text-danger">*</span></label>
+                                                                    <input type="password" value="<?php echo $row["password"]; ?>" class="form-control" id="password" name="password" placeholder="Enter password">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <label for="val-link">Link <span class="text-danger">*</span></label>
-                                                                    <input type="text" value="<?php echo $row["link"]; ?>" class="form-control" id="link" name="link" placeholder="Enter link">
+                                                                    <label for="confrim_password">Confirm Password <span class="text-danger">*</span></label>
+                                                                    <input type="password" value="<?php echo $row["confirm_password"]; ?>" class="form-control" id="confirm_password" name="confirm_password" placeholder="Enter confirm password">
                                                                 </div>
-                                                            
+
                                                                 <div class="form-group">
-                                                                    <label for="val-image">Profile Picture<span class="text-danger">*</span></label>
-                                                                    <input type="file" class="form-control" id="images" name="image"><br>    
-                                                                    <img src="http://localhost/hostelbackend/images/<?php echo $row["image"];?>" id="current_image"style="width:70px;height:50px;" >
-                                                                </div>
-                                                                <div class="form-group">
-                                                                <label for="sort_id">Sorting Id</label>
-                                                                <input type="text" value="<?php echo $row["sort_id"]; ?>" class="form-control" id="sort_id" name="sort_id" placeholder=" ">
-                                                                <!-- <select class="form-control" id="sort_id" name="sort_id">
-                                                                    <option value="0">Please select</option>
-                                                                    <option value="1">Option #1</option>
-                                                                </select> -->
+                                                                <label for="user_type">User Type</label>
+                                                                <input type="text" value="<?php echo $row["user_type"]; ?>" class="form-control" id="user_type" name="user_type" placeholder=" ">
                                                             </div>
                                                             </div>  
                                                         </div>
@@ -140,7 +132,7 @@ if(isset($_SESSION["message"]) && !empty($_SESSION["message"] )){
                                         <div class="modal-footer">
                                               <button type="submit" class="btn btn-sm btn-primary" name="upload" data-dismiss="modal">Submit</button>
                                          </div>
-	?>
+
                                         </form> 
                                     </div>
                                     

@@ -75,6 +75,59 @@ if(isset($_SESSION["msg"]) && !empty($_SESSION["msg"] )){
                             <td><img src="http://localhost/hostelbackend/images/<?php echo $row["image"];?>" style="width:70px;height:50px;" ></td>
                             <td>
                                <a href=""><button type="submit" class="btn btn-primary">Edit</button></a>
+                               <!-- Modal -->
+                               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Update Student</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <form class="js-validation" action="insert_student.php" method="POST" enctype="multipart/form-data">
+                                            <div class="block">
+                                                <div class="block-content block-content-full">
+                                                    <div class="">
+                                                        <div class="row items-push">
+                                                            <div class="col-sm-12">
+                                                                <div class="form-group">
+                                                                    <label for="username">Name <span class="text-danger">*</span></label>
+                                                                    <input type="text" value="<?php echo $row["name"]; ?>"  class="form-control" id="name" name="name" placeholder="Enter name">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="address">Address <span class="text-danger">*</span></label>
+                                                                    <input type="text" value="<?php echo $row["address"]; ?>" class="form-control" id="address" name="address" placeholder="Enter  address">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="phone">Phone Number <span class="text-danger">*</span></label>
+                                                                    <input type="text" value="<?php echo $row["phone"]; ?>" class="form-control" id="phone" name="phone" placeholder="Enter phone number">
+                                                                </div>
+                                                            
+                                                                <div class="form-group">
+                                                                    <label for="val-image">Profile Picture<span class="text-danger">*</span></label>
+                                                                    <input type="file" class="form-control" id="images" name="image"><br>    
+                                                                    <img src="http://localhost/hostelbackend/images/<?php echo $row["image"];?>" id="current_image"style="width:70px;height:50px;" >
+                                                                </div>
+                                                            </div>  
+                                                        </div>
+                                                        <!-- END Regular -->
+                                                        
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        <div class="modal-footer">
+                                              <button type="submit" class="btn btn-sm btn-primary" name="upload" data-dismiss="modal">Submit</button>
+                                         </div>
+	?>
+                                        </form> 
+                                    </div>
+                                    
+                                    </div>
+                                </div>
+                                </div>
                                <a href=""><button type="submit" class="btn btn-danger">Delete</button></a>
                            </td>
                       </tr>

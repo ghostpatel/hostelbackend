@@ -19,7 +19,7 @@
                 <ol class="breadcrumb breadcrumb-alt">
                     <li class="breadcrumb-item">Login</li>
                     <li class="breadcrumb-item" aria-current="page">
-                        <a class="link-fx" href="">Validation</a>
+                        <a class="link-fx" href="">Login Form</a>
                     </li>
                 </ol>
             </nav>
@@ -32,7 +32,7 @@
 <div class="content">
     <!-- jQuery Validation (.js-validation class is initialized in js/pages/be_forms_validation.min.js which was auto compiled from _es6/pages/be_forms_validation.js) -->
     <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-    <form class="js-validation" action="pages/login/create_login.php" method="POST">
+    <form class="js-validation" action="insert_login.php" method="POST">
         <div class="block">
 
             <div class="block-content block-content-full">
@@ -40,25 +40,29 @@
                     <div class="row items-push">
                         <div class="col-lg-8 col-xl-5">
                             <div class="form-group">
-                                <label for="val-username">Username <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="val-username" name="val-username" placeholder="Enter a username..">
+                                <label for="username">Username <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="Enter a username..">
                             </div>
                             <div class="form-group">
-                                <label for="val-email">Email <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="val-email" name="val-email" placeholder="Your valid email..">
+                                <label for="email">Email <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="val-email" name="email" placeholder="Your valid email..">
                             </div>
                             <div class="form-group">
-                                <label for="val-password">Password <span class="text-danger">*</span></label>
-                                <input type="password" class="form-control" id="val-password" name="val-password" placeholder="Choose a safe one..">
+                                <label for="password">Password <span class="text-danger">*</span></label>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Choose a safe one..">
                             </div>
                             <div class="form-group">
-                                <label for="val-confirm-password">Confirm Password <span class="text-danger">*</span></label>
-                                <input type="password" class="form-control" id="val-confirm-password" name="val-confirm-password" placeholder="..and confirm it!">
+                                <label for="confirm-password">Confirm Password <span class="text-danger">*</span></label>
+                                <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="..and confirm it!">
+                            </div>
+                            <div class="form-group">
+                                <label for="user_type">User Type</label>
+                                <input type="text" class="form-control" id="user_type" name="user_type" placeholder="">
                             </div>
                         </div>
                     </div>
                     <!-- END Regular -->
-                    <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Submit</button>
+                    <button type="submit" class="btn btn-sm btn-primary" data-dismiss="modal">Submit</button>
             </div>
         </div>
     </div>

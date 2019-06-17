@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <!-- END Regular -->
-                    <button type="submit" class="btn btn-sm btn-primary" data-dismiss="modal">Submit</button>
+                    <button type="submit" class="btn btn-sm btn-primary" name="upload" data-dismiss="modal">Submit</button>
             </div>
         </div>
     </div>

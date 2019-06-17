@@ -52,7 +52,7 @@ $one->main_nav                   = array(
     ),
     array(
         'name'  => 'Sliders',
-        'icon'  => 'si si-badge',
+        'icon'  => 'si si-frame',
         'sub'   => array(
            array(
             'name'  => 'Slider Form',
@@ -66,7 +66,7 @@ $one->main_nav                   = array(
     ),
     array(
         'name'  => 'Facility',
-        'icon'  => 'si si-wrench',
+        'icon'  => 'si si-note',
         'sub'   => array(
             array(
                 'name'  => 'Facility Form',
@@ -80,7 +80,7 @@ $one->main_nav                   = array(
     ),
     array(
         'name'  => 'Gallery',
-        'icon'  => 'si si-wrench',
+        'icon'  => 'far fa-images',
         'sub'   => array(
             array(
                 'name'  => 'Gallery Form',
@@ -94,7 +94,7 @@ $one->main_nav                   = array(
     ),
     array(
         'name'  => 'Student List',
-        'icon'  => 'si si-badge',
+        'icon'  => 'fa fa-list-alt',
         'sub'   => array(
             array(
                 'name'  => 'Student Form',
@@ -107,7 +107,7 @@ $one->main_nav                   = array(
     ),
     array(
         'name'  => 'Login',
-        'icon'  => 'si si-grid',
+        'icon'  => 'si si-login',
         'sub'   => array(
             array(
                 'name'  => 'Sign Up',
@@ -122,7 +122,7 @@ $one->main_nav                   = array(
     ),
     array(
         'name'  => 'Contact',
-        'icon'  => 'si si-note',
+        'icon'  => 'far fa-address-book',
         'sub'   => array(
             array(
                 'name'  => 'Contact Form',
@@ -137,7 +137,7 @@ $one->main_nav                   = array(
     ),
     array(
         'name'  => 'Subscribe',
-        'icon'  => 'si si-wrench',
+        'icon'  => 'fa fa-rss-square',
         'sub'   => array(
             array(
                 'name'  => 'Subscribe Form',
@@ -152,7 +152,7 @@ $one->main_nav                   = array(
 
     array(
         'name'  => 'Setting',
-        'icon'  => 'si si-wrench',
+        'icon'  => 'si si-settings',
         'sub'   => array(
             array(
                 'name'  => 'Setting Form',
@@ -167,7 +167,7 @@ $one->main_nav                   = array(
  
     array(
         'name'  => 'Reporting',
-        'icon'  => 'si si-wrench',
+        'icon'  => 'fa fa-exclamation',
         'sub'   => array(
             array(
                 'name'  => 'Reporting Form',

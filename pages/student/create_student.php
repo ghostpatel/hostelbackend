@@ -32,7 +32,7 @@
 <div class="content">
     <!-- jQuery Validation (.js-validation class is initialized in js/pages/be_forms_validation.min.js which was auto compiled from _es6/pages/be_forms_validation.js) -->
     <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-    <form class="js-validation" action="pages/student/insert_student.php" method="POST">
+    <form class="js-validation" action="insert_student.php" method="POST">
         <div class="block">
 
             <div class="block-content block-content-full">
@@ -40,20 +40,20 @@
                     <div class="row items-push">
                         <div class="col-md-8 col-xl-5">
                             <div class="form-group">
-                                <label for="val-name">Name <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="val-firstname" name="val-name" placeholder="Enter your name">
+                                <label for="name">Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="firstname" name="name" placeholder="Enter your name">
                             </div>
                             <div class="form-group">
-                                <label for="val-email">Address <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="val-address" name="val-address" placeholder="Enter address">
+                                <label for="email">Address <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="address" name="address" placeholder="Enter address">
                             </div>
                             <div class="form-group">
-                                <label for="val-phone">Phone Number <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="val-phone" name="val-phone" placeholder="Enter your phone number">
+                                <label for="phone">Phone Number <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
                             </div>
                             <div class="form-group">
-                                <label for="val-image">Profile Picture<span class="text-danger">*</span></label>
-                                <input type="file" class="form-control" id="val-image" name="val-image">
+                                <label for="image">Profile Picture<span class="text-danger">*</span></label>
+                                <input type="file" class="form-control" id="image" name="image">
                             </div>
                         </div>
                     </div>

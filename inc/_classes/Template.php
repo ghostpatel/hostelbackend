@@ -259,7 +259,7 @@ class Template {
 
                 // Add the link
                 $this->nav_html .= "<li$li_prop>\n";
-                $this->nav_html .= "<a$link_prop href=\"$link_url\">\n$link_icon$link_name$link_badge</a>\n";
+                $this->nav_html .= "<a$link_prop href=../$link_url>\n$link_icon$link_name$link_badge</a>\n";
 
                 // If it is a submenu, call the function again
                 if ($link_sub) {

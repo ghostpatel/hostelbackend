@@ -3,8 +3,8 @@
 <?php require '../../inc/_global/views/head_start.php'; ?>
 
 <!-- Page JS Plugins CSS -->
-<?php $one->get_css('../../assets/js/plugins/datatables/dataTables.bootstrap4.css'); ?>
-<?php $one->get_css('../../asstes/js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css'); ?>
+<?php $one->get_css('../../../assets/js/plugins/datatables/dataTables.bootstrap4.css'); ?>
+<?php $one->get_css('../../../asstes/js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css'); ?>
 
 <?php require '../../inc/_global/views/head_end.php'; ?>
 <?php require '../../inc/_global/views/page_start.php'; ?>

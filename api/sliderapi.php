@@ -23,9 +23,9 @@ if (!isset($_POST["link"]) || trim($_POST["link"])=='') {
 } 
 
 
-// if (!isset($_POST["image"]) || trim($_POST["image"])=='') {
-//     $errMsg['image']="Image is required";
-//  }
+if (!isset($_POST["image"]) || trim($_POST["image"])=='') {
+    $errMsg['image']="Image is required";
+ }
             
 
 if(count($errMsg)==0)

@@ -34,7 +34,9 @@
 <div class="content">
     <!-- jQuery Validation (.js-validation class is initialized in js/pages/be_forms_validation.min.js which was auto compiled from _es6/pages/be_forms_validation.js) -->
     <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-    <form class="js-validation" action="pages/slider/insert_slider.php" method="POST" enctype="multipart/form-data">
+    <form class="js-validation" name="sliderfrm" action="insert_slider.php" method="POST" enctype="multipart/form-data">
+    <div class="alert alert-danger display-error" style="display: none">
+    </div>
         <div class="block">
 
             <div class="block-content block-content-full">
@@ -69,7 +71,7 @@
                         </div>  
                     </div>
                     <!-- END Regular -->
-                    <button type="submit" class="btn btn-sm btn-primary" name="upload" data-dismiss="modal">Submit</button>
+                    <button type="submit" onclick="SliderApi()" class="btn btn-sm btn-primary" name="upload" data-dismiss="modal">Submit</button>
             </div>
         </div>
    
@@ -77,6 +79,50 @@
     </form> 
 </div>
 <!-- END Terms Modal -->
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+
+<!-- Call slider api -->
+ <script>
+function SliderApi() {
+
+    // $.ajax({
+    //        type: "POST",
+    //        url: "http://localhost/hostelbackend/api/sliderapi.php",
+    //        data: form.serialize(), // serializes the form's elements.
+    //        success: function(data)
+    //        {
+    //            debugger;
+    //            alert(data); // show response from the php script.
+    //        }
+    //        error: function(data){
+    //            debugger;
+    //            alert('error')
+    //        }
+    //      });
+    
+    // var frm = document.forms["sliderfrm"]["title"]["description"]["link"]['image'].value;
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+         if (this.readyState == 4 && this.status == 200) {
+             alert(this.responseText);
+            //  var response1 = JSON.parse(this.responseText);
+            //  document.getElementById("title").innerHTML = response1.title;
+            //  document.getElementById("description").innerHTML = response1.description;
+            //  document.getElementById("link").innerHTML = response1.link;
+            //  document.getElementById("image").innerHTML = response1.image;
+
+           }
+    };
+    xhttp.open("POST", "http://localhost/hostelbackend/api/sliderapi.php", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send("$jsonData");
+   
+}
+</script>
+<!-- End for calling slider api -->
+
+
+
 
 <?php require '../../inc/_global/views/footer_start.php'; ?>
 
@@ -84,6 +130,7 @@
 <?php $one->get_js('../../assets/js/plugins/select2/js/select2.full.min.js',true); ?>
 <?php $one->get_js('../../assets/js/plugins/jquery-validation/jquery.validate.min.js',true); ?>
 <?php $one->get_js('../../assets/js/plugins/jquery-validation/additional-methods.js',true); ?>
+
 
 <!-- Page JS Helpers (Select2 plugin) -->
 <script>jQuery(function(){ One.helpers('select2'); });</script>

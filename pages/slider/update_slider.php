@@ -4,25 +4,32 @@ $db = new mysqli("localhost", "root", "","hostel");
 
 if (isset($_POST['edit'])) {
 
-    $name = $_POST['name'];
-    $address = $_POST['address'];
-    $phone = $_POST['phone'];
+    $title = $_POST['title'];
+    $description = $_POST['description'];
+    $link = $_POST['link'];
     $image = $_FILES['image']['name'];
     $image_temp = $_FILES['image']['tmp_name'];
+    $sortid = $_POST['sort_id'];
 
-   $sql = "UPDATE student  WHERE id = $id";
+   $sql = "UPDATE slider  WHERE id = $id";
 
    if($image_temp != "")
-{
-    move_uploaded_file($image_temp , "images/$image");
-    $sql ="update student set name='$name', addtress='$address', phone='$phone', image= '$image'
-     where id='$id'";   
-}else
-{
-    $sql="update student set name='$name', address='$address', phone='$phone' image= '$image'
-    where id='$id'"; 
-}
+   {
+      move_uploaded_file($image_temp , "images/$image");
+       $sql ="update slider set title='$title', description='$description', link='$link', image= '$image' , sort_id= '$sortid'
+            where id='$id'";   
+    }
+    
+    else
+    {
 
-$update = mysqli_query($db, $sql);
+    $sql = "update slider set title='$title', description='$description', link='$link' image= '$image', sort_id= '$sortid'
+                where id='$id'";
+
+    }
+
+   $update = mysqli_query($db, $sql);
+
+   $db ->close();
 }
 

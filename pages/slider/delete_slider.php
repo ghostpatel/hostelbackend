@@ -2,9 +2,11 @@
 
 $db = new mysqli("localhost","root","","hostel");
 
-$id=$_GET['id'];
+$id = $_POST['id'];
 
-$sql = "DELETE FROM slider where id = $id";
+print_r ($id); die();
+
+$sql = "DELETE FROM slider where id = '".$id."'";
 
  
    $result = mysqli_query($db, $sql);

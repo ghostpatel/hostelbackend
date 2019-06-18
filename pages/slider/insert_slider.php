@@ -2,7 +2,7 @@
 
 // print_r($_POST);
 $db =  new mysqli('localhost','root','','hostel');
- 
+
 if(isset($_POST['upload'])){
    
     // print_r($_FILES); return;
@@ -16,6 +16,9 @@ if(isset($_POST['upload'])){
    $sortid = $_POST['sort_id'];
 
   }
+
+  
+
     $sql = "INSERT INTO slider (title, description, link, image, sort_id) VALUES ( '$title', '$description', '$link', '$image', '$sortid')";
 
     if ($db->query($sql) === TRUE) {
@@ -34,11 +37,11 @@ if(isset($_POST['upload'])){
 
     session_start();
 
-    //  if($_GET['submit']){
+    // if($_GET['submit']){
             $_SESSION["msg"] = "Data has been recorded successfully";
-             header("location:pages/slider/show_sliders_details.php");
+             header("location:show_sliders_details.php");
               exit;
-        //  }
+    //  }
 
 
    ?>

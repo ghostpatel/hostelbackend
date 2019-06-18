@@ -3,7 +3,7 @@
 <?php require '../../inc/_global/views/head_start.php'; ?>
 
 <!-- Page JS Plugins CSS -->
-<?php $one->get_css('../../js/plugins/select2/css/select2.min.css'); ?>
+<?php $one->get_css('../../../assets/js/plugins/select2/css/select2.min.css'); ?>
 
 <?php require '../../inc/_global/views/head_end.php'; ?>
 <?php require '../../inc/_global/views/page_start.php'; ?>
@@ -68,9 +68,9 @@
 <?php require '../../inc/_global/views/footer_start.php'; ?>
 
 <!-- Page JS Plugins -->
-<?php $one->get_js('../../js/plugins/select2/js/select2.full.min.js'); ?>
-<?php $one->get_js('../../js/plugins/jquery-validation/jquery.validate.min.js'); ?>
-<?php $one->get_js('../../js/plugins/jquery-validation/additional-methods.js'); ?>
+<?php $one->get_js('../../../assets/js/plugins/select2/js/select2.full.min.js'); ?>
+<?php $one->get_js('../../../assets/js/plugins/jquery-validation/jquery.validate.min.js'); ?>
+<?php $one->get_js('../../../assets/js/plugins/jquery-validation/additional-methods.js'); ?>
 
 <!-- Page JS Helpers (Select2 plugin) -->
 <script>jQuery(function(){ One.helpers('select2'); });</script>

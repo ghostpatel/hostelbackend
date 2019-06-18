@@ -82,12 +82,12 @@ if(isset($_SESSION["message"]) && !empty($_SESSION["message"] )){
                                 <img src="http://localhost/hostelbackend/images/<?php echo $row["image"];?>" style="width:70px;height:50px;" >
                             </td>
                             <td>
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                <button type="button" class="btn btn-primary" name="edit" data-toggle="modal" data-target="#exampleModal<?php echo $row["id"];?>">
                                     Edit
                                 </button>
 
                                 <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="exampleModal<?php echo $row["id"];?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                     <div class="modal-header">
@@ -140,7 +140,7 @@ if(isset($_SESSION["message"]) && !empty($_SESSION["message"] )){
                                         <div class="modal-footer">
                                               <button type="submit" class="btn btn-sm btn-primary" name="upload" data-dismiss="modal">Submit</button>
                                          </div>
-	?>
+                                         
                                         </form> 
                                     </div>
                                     

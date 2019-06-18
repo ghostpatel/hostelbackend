@@ -30,7 +30,7 @@
     <div class="block">
         
         <div class="block-content block-content-full">
-            <form action="pages/contact/create_contact.php" method="POST" enctype="multipart/form-data" onsubmit="return false;">
+            <form action="insert_contact.php" method="POST" enctype="multipart/form-data" onsubmit="return false;">
                 <div class="row push">
                     <div class="col-lg-8 col-xl-5">
                         <div class="form-group">
